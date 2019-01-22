@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="x_view_small_margin">8dp</dimen>
+    <dimen name="view_small_margin">16dp</dimen>
+    <dimen name="x_view_medium_margin">24dp</dimen>
+    <dimen name="view_medium_margin">32dp</dimen>
+
+    <dimen name="image_view_width">100dp</dimen>
+    <dimen name="image_view_height">100dp</dimen>
+</resources>

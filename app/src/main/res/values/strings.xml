@@ -1,0 +1,8 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">NewsApp</string>
+    <string name="oh_no">Oh no!</string>
+    <string name="no_news">No news found.</string>
+    <string name="no_internet">No internet connection.</string>
+    <string name="author_name">By: %s</string>
+</resources>

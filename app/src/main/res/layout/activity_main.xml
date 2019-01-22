@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="0.5dp"
+        android:orientation="vertical" />
+
+    <!-- Empty view is only visible when the list has no items or no internet connectivity. -->
+    <RelativeLayout
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/empty_view_image"
+            android:layout_width="@dimen/image_view_width"
+            android:layout_height="@dimen/image_view_height"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/app_name"
+            android:tint="@color/colorPrimaryDark"
+            tools:src="@drawable/no_news" />
+
+        <TextView
+            android:id="@+id/empty_view_top_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/empty_view_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/x_view_medium_margin"
+            android:textAlignment="center"
+            android:textColor="@color/darkTextColor"
+            android:textSize="20sp"
+            tools:text="Oh no!" />
+
+        <TextView
+            android:id="@+id/empty_view_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/empty_view_top_text"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/x_view_small_margin"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            tools:text="No news found." />
+
+    </RelativeLayout>
+
+
+    <ProgressBar
+        android:id="@+id/loading_indicator"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+
+</RelativeLayout>
